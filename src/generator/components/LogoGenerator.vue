@@ -12,7 +12,18 @@
       <!-- Modal -->
       <div v-if="showModal" class="modal">
         <div class="modal-content">
-            <h2>Advertisement</h2>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5751519975977559"
+     crossorigin="anonymous"></script>
+            <!-- loading_ad -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-5751519975977559"
+                data-ad-slot="8264320289"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
             <!-- Add your advertisement content here -->
             <button @click="checkLogoStatus" :disabled="isGenerating">
             {{ isGenerating ? $t('message.generating') : $t('message.showLogo') }}
