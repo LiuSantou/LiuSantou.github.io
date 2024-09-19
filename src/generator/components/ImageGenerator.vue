@@ -53,6 +53,7 @@
 import axios from 'axios';
 import checkpoints from '@/assets/checkpoint.json';
 import samplers from '@/assets/sampler.json';
+
 export default {
   name: 'ImageGenerator',
   data() {
@@ -81,7 +82,8 @@ export default {
           const encodedNegativePrompt = encodeURIComponent(this.negativePrompt);
           const encodedSampler = encodeURIComponent(this.selectedSampler);
           const encodedSize = encodeURIComponent(this.size);
-          const url = `/api/generate-image?prompt=${encodedPrompt}&model=${encodedModel}&negative=${encodedNegativePrompt}&sampler=${encodedSampler}&size=${encodedSize}`;
+          const api_url="http://[2600:1900:4001:8a7::]:9527"
+          const url = `${api_url}/generate-image?prompt=${encodedPrompt}&model=${encodedModel}&negative=${encodedNegativePrompt}&sampler=${encodedSampler}&size=${encodedSize}`;
           
           const response = await axios.get(url);
           console.log('API Response:', response);
@@ -102,7 +104,8 @@ export default {
         
         this.isGenerating = true;
         try {
-            const response = await axios.get(`/api/result?task=${this.taskId}`);
+            const api_url="http://[2600:1900:4001:8a7::]:9527"
+            const response = await axios.get(`${api_url}/result?task=${this.taskId}`);
             
             if (response.data.status === 'complete') {
                 console.log('Logo generation completed:', response.data);

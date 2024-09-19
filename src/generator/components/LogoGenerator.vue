@@ -65,7 +65,8 @@
             try {
                 const encodedPrompt = encodeURIComponent(this.prompt);
                 const encodedStyle = encodeURIComponent(this.style);
-                const url = `/api/generate-logo?prompt=${encodedPrompt}&style=${encodedStyle}`;
+                const api_url="http://[2600:1900:4001:8a7::]:9527"
+                const url = `${api_url}/generate-logo?prompt=${encodedPrompt}&style=${encodedStyle}`;
                 
                 const response = await axios.get(url);
                 console.log('API Response:', response);
@@ -85,7 +86,8 @@
             
             this.isGenerating = true;
             try {
-                const response = await axios.get(`/api/result?task=${this.taskId}`);
+                const api_url="http://[2600:1900:4001:8a7::]:9527"
+                const response = await axios.get(`${api_url}/result?task=${this.taskId}`);
                 
                 if (response.data.status === 'complete') {
                     console.log('Logo generation completed:', response.data);
