@@ -1,0 +1,123 @@
+[
+  {
+    "index": 0,
+    "name": "DPM++ 2M Karras",
+    "selected": true
+  },
+  {
+    "index": 1,
+    "name": "DPM++ SDE Karras"
+  },
+  {
+    "index": 2,
+    "name": "DPM++ 2M SDE Exponential"
+  },
+  {
+    "index": 3,
+    "name": "DPM++ 2M SDE Karras"
+  },
+  {
+    "index": 4,
+    "name": "Euler a"
+  },
+  {
+    "index": 5,
+    "name": "Euler"
+  },
+  {
+    "index": 6,
+    "name": "LMS"
+  },
+  {
+    "index": 7,
+    "name": "Heun"
+  },
+  {
+    "index": 8,
+    "name": "DPM2"
+  },
+  {
+    "index": 9,
+    "name": "DPM2 a"
+  },
+  {
+    "index": 10,
+    "name": "DPM++ 2S a"
+  },
+  {
+    "index": 11,
+    "name": "DPM++ 2M"
+  },
+  {
+    "index": 12,
+    "name": "DPM++ SDE"
+  },
+  {
+    "index": 13,
+    "name": "DPM++ 2M SDE"
+  },
+  {
+    "index": 14,
+    "name": "DPM++ 2M SDE Heun"
+  },
+  {
+    "index": 15,
+    "name": "DPM++ 2M SDE Heun Karras"
+  },
+  {
+    "index": 16,
+    "name": "DPM++ 2M SDE Heun Exponential"
+  },
+  {
+    "index": 17,
+    "name": "DPM++ 3M SDE"
+  },
+  {
+    "index": 18,
+    "name": "DPM++ 3M SDE Karras"
+  },
+  {
+    "index": 19,
+    "name": "DPM++ 3M SDE Exponential"
+  },
+  {
+    "index": 20,
+    "name": "DPM fast"
+  },
+  {
+    "index": 21,
+    "name": "DPM adaptive"
+  },
+  {
+    "index": 22,
+    "name": "LMS Karras"
+  },
+  {
+    "index": 23,
+    "name": "DPM2 Karras"
+  },
+  {
+    "index": 24,
+    "name": "DPM2 a Karras"
+  },
+  {
+    "index": 25,
+    "name": "DPM++ 2S a Karras"
+  },
+  {
+    "index": 26,
+    "name": "Restart"
+  },
+  {
+    "index": 27,
+    "name": "DDIM"
+  },
+  {
+    "index": 28,
+    "name": "PLMS"
+  },
+  {
+    "index": 29,
+    "name": "UniPC"
+  }
+]

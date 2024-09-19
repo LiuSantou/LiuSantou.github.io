@@ -1,0 +1,263 @@
+[
+    {
+      "name": "3Guofeng3_v34.safetensors [50f420de]",
+      "index": 0
+    },
+    {
+      "name": "absolutereality_V16.safetensors [37db0fc3]",
+      "index": 1
+    },
+    {
+      "name": "absolutereality_v181.safetensors [3d9d4d2b]",
+      "index": 2
+    },
+    {
+      "name": "amIReal_V41.safetensors [0a8a2e61]",
+      "index": 3
+    },
+    {
+      "name": "analog-diffusion-1.0.ckpt [9ca13f02]",
+      "index": 4
+    },
+    {
+      "name": "aniverse_v30.safetensors [579e6f85]",
+      "index": 5
+    },
+    {
+      "name": "anythingv3_0-pruned.ckpt [2700c435]",
+      "index": 6
+    },
+    {
+      "name": "anything-v4.5-pruned.ckpt [65745d25]",
+      "index": 7
+    },
+    {
+      "name": "anythingV5_PrtRE.safetensors [893e49b9]",
+      "index": 8
+    },
+    {
+      "name": "AOM3A3_orangemixs.safetensors [9600da17]",
+      "index": 9
+    },
+    {
+      "name": "blazing_drive_v10g.safetensors [ca1c1eab]",
+      "index": 10
+    },
+    {
+      "name": "breakdomain_I2428.safetensors [43cc7d2f]",
+      "index": 11
+    },
+    {
+      "name": "breakdomain_M2150.safetensors [15f7afca]",
+      "index": 12
+    },
+    {
+      "name": "cetusMix_Version35.safetensors [de2f2560]",
+      "index": 13
+    },
+    {
+      "name": "childrensStories_v13D.safetensors [9dfaabcb]",
+      "index": 14
+    },
+    {
+      "name": "childrensStories_v1SemiReal.safetensors [a1c56dbb]",
+      "index": 15
+    },
+    {
+      "name": "childrensStories_v1ToonAnime.safetensors [2ec7b88b]",
+      "index": 16
+    },
+    {
+      "name": "Counterfeit_v30.safetensors [9e2a8f19]",
+      "index": 17
+    },
+    {
+      "name": "cuteyukimixAdorable_midchapter3.safetensors [04bdffe6]",
+      "index": 18
+    },
+    {
+      "name": "cyberrealistic_v33.safetensors [82b0d085]",
+      "index": 19
+    },
+    {
+      "name": "dalcefo_v4.safetensors [425952fe]",
+      "index": 20
+    },
+    {
+      "name": "deliberate_v2.safetensors [10ec4b29]",
+      "index": 21
+    },
+    {
+      "name": "deliberate_v3.safetensors [afd9d2d4]",
+      "index": 22
+    },
+    {
+      "name": "dreamlike-anime-1.0.safetensors [4520e090]",
+      "index": 23
+    },
+    {
+      "name": "dreamlike-diffusion-1.0.safetensors [5c9fd6e0]",
+      "index": 24
+    },
+    {
+      "name": "dreamlike-photoreal-2.0.safetensors [fdcf65e7]",
+      "index": 25
+    },
+    {
+      "name": "dreamshaper_6BakedVae.safetensors [114c8abb]",
+      "index": 26
+    },
+    {
+      "name": "dreamshaper_7.safetensors [5cf5ae06]",
+      "index": 27
+    },
+    {
+      "name": "dreamshaper_8.safetensors [9d40847d]",
+      "index": 28
+    },
+    {
+      "name": "edgeOfRealism_eorV20.safetensors [3ed5de15]",
+      "index": 29
+    },
+    {
+      "name": "EimisAnimeDiffusion_V1.ckpt [4f828a15]",
+      "index": 30
+    },
+    {
+      "name": "elldreths-vivid-mix.safetensors [342d9d26]",
+      "index": 31
+    },
+    {
+      "name": "epicphotogasm_xPlusPlus.safetensors [1a8f6d35]",
+      "index": 32
+    },
+    {
+      "name": "epicrealism_naturalSinRC1VAE.safetensors [90a4c676]",
+      "index": 33
+    },
+    {
+      "name": "epicrealism_pureEvolutionV3.safetensors [42c8440c]",
+      "index": 34
+    },
+    {
+      "name": "ICantBelieveItsNotPhotography_seco.safetensors [4e7a3dfd]",
+      "index": 35
+    },
+    {
+      "name": "indigoFurryMix_v75Hybrid.safetensors [91208cbb]",
+      "index": 36
+    },
+    {
+      "name": "juggernaut_aftermath.safetensors [5e20c455]",
+      "index": 37
+    },
+    {
+      "name": "lofi_v4.safetensors [ccc204d6]",
+      "index": 38
+    },
+    {
+      "name": "lyriel_v16.safetensors [68fceea2]",
+      "index": 39
+    },
+    {
+      "name": "majicmixRealistic_v4.safetensors [29d0de58]",
+      "index": 40
+    },
+    {
+      "name": "mechamix_v10.safetensors [ee685731]",
+      "index": 41
+    },
+    {
+      "name": "meinamix_meinaV9.safetensors [2ec66ab0]",
+      "index": 42
+    },
+    {
+      "name": "meinamix_meinaV11.safetensors [b56ce717]",
+      "index": 43
+    },
+    {
+      "name": "neverendingDream_v122.safetensors [f964ceeb]",
+      "index": 44
+    },
+    {
+      "name": "openjourney_V4.ckpt [ca2f377f]",
+      "index": 45,
+      "selected": true
+    },
+    {
+      "name": "pastelMixStylizedAnime_pruned_fp16.safetensors [793a26e8]",
+      "index": 46
+    },
+    {
+      "name": "portraitplus_V1.0.safetensors [1400e684]",
+      "index": 47
+    },
+    {
+      "name": "protogenx34.safetensors [5896f8d5]",
+      "index": 48
+    },
+    {
+      "name": "Realistic_Vision_V1.4-pruned-fp16.safetensors [8d21810b]",
+      "index": 49
+    },
+    {
+      "name": "Realistic_Vision_V2.0.safetensors [79587710]",
+      "index": 50
+    },
+    {
+      "name": "Realistic_Vision_V4.0.safetensors [29a7afaa]",
+      "index": 51
+    },
+    {
+      "name": "Realistic_Vision_V5.0.safetensors [614d1063]",
+      "index": 52
+    },
+    {
+      "name": "Realistic_Vision_V5.1.safetensors [a0f13c83]",
+      "index": 53
+    },
+    {
+      "name": "redshift_diffusion-V10.safetensors [1400e684]",
+      "index": 54
+    },
+    {
+      "name": "revAnimated_v122.safetensors [3f4fefd9]",
+      "index": 55
+    },
+    {
+      "name": "rundiffusionFX25D_v10.safetensors [cd12b0ee]",
+      "index": 56
+    },
+    {
+      "name": "rundiffusionFX_v10.safetensors [cd4e694d]",
+      "index": 57
+    },
+    {
+      "name": "sdv1_4.ckpt [7460a6fa]",
+      "index": 58
+    },
+    {
+      "name": "v1-5-pruned-emaonly.safetensors [d7049739]",
+      "index": 59
+    },
+    {
+      "name": "v1-5-inpainting.safetensors [21c7ab71]",
+      "index": 60
+    },
+    {
+      "name": "shoninsBeautiful_v10.safetensors [25d8c546]",
+      "index": 61
+    },
+    {
+      "name": "theallys-mix-ii-churned.safetensors [5d9225a4]",
+      "index": 62
+    },
+    {
+      "name": "timeless-1.0.ckpt [7c4971d4]",
+      "index": 63
+    },
+    {
+      "name": "toonyou_beta6.safetensors [980f6b15]",
+      "index": 64
+    }
+  ]

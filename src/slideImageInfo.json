@@ -1,0 +1,6 @@
+[
+    { "image": "assets/gear.jpg", "title": "Gear" },
+    { "image": "assets/keycap.jpg", "title": "Keycaps" },
+    { "image": "assets/accessory.jpg", "title": "Accessory" },
+    { "image": "assets/anime.jpg", "title": "Anime" }
+  ]
