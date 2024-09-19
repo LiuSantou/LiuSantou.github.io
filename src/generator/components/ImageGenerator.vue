@@ -82,7 +82,7 @@ export default {
           const encodedNegativePrompt = encodeURIComponent(this.negativePrompt);
           const encodedSampler = encodeURIComponent(this.selectedSampler);
           const encodedSize = encodeURIComponent(this.size);
-          const api_url="http://[2600:1900:4001:8a7::]:9527"
+          const api_url="https://[2600:1900:4001:8a7::]:9527"
           const url = `${api_url}/generate-image?prompt=${encodedPrompt}&model=${encodedModel}&negative=${encodedNegativePrompt}&sampler=${encodedSampler}&size=${encodedSize}`;
           
           const response = await axios.get(url);
@@ -104,7 +104,7 @@ export default {
         
         this.isGenerating = true;
         try {
-            const api_url="http://[2600:1900:4001:8a7::]:9527"
+            const api_url="https://[2600:1900:4001:8a7::]:9527"
             const response = await axios.get(`${api_url}/result?task=${this.taskId}`);
             
             if (response.data.status === 'complete') {

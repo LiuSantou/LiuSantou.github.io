@@ -39,7 +39,7 @@
                 const encodedName = encodeURIComponent(this.form.name);
                 const encodedEmail = encodeURIComponent(this.form.email);
                 const encodedMessage = encodeURIComponent(this.form.message);
-                const api_url="http://[2600:1900:4001:8a7::]:9527"
+                const api_url="https://[2600:1900:4001:8a7::]:9527"
                 const url = `${api_url}/contact?name=${encodedName}&email=${encodedEmail}&message=${encodedMessage}`;
                 
                 await axios.post(url);
