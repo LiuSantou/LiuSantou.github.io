@@ -38,7 +38,7 @@
         </script>
           <!-- Add your advertisement content here -->
         <button @click="checkLogoStatus" :disabled="isGenerating">
-        {{ isGenerating ? $t('message.generating') : $t('message.showLogo') }}
+        {{ isGenerating ? $t('message.generating') : $t('message.showwImage') }}}
         </button>
       </div>
     </div>
