@@ -128,6 +128,27 @@ const messages = {
         "success": "Message sent successfully!",
         "error": "An error occurred while sending the message. Please try again later."
       }
+    },
+    shop: {
+      companyName: 'Ragnarok Shop',
+      companyLogo: 'Company Logo',
+      searchPlaceholder: 'Search products...',
+      search: 'Search',
+      home: 'Home',
+      products: 'Products',
+      contact: 'Contact',
+      aboutUs: 'About Us',
+      aboutUsDescription: 'We are a company dedicated to providing high-quality products.',
+      quickLinks: 'Quick Links',
+      contactUs: 'Contact Us',
+      shopUrl: 'Shop URL',
+      phone: 'Phone',
+      copyright: '© {year} Ragnarok Shop. All rights reserved.',
+      productListForCategory: 'Products in category {id}',
+      currency: '${amount}',
+      quickView: 'Quick View',
+      addToCart: 'Add to Cart',
+      productCategories: 'Product Categories'
     }
   },
   zh: {
@@ -247,7 +268,6 @@ const messages = {
           "content": "我们利用最先进的AI模型，在优先考虑用户隐私和易用性的同时，提供高质量、定制化的视觉内容。"
         }
       },
-      aboutUsContent: "We are...",
       contactUs: "联系我们",
       contactUsContent: {
         "title": "联系我们",
@@ -258,6 +278,27 @@ const messages = {
         "success": "信息已成功发送！",
         "error": "信息发送过程中出现错误。请稍后再试。"
       }
+    },
+    shop: {
+      companyName: '终末的矮人',
+      companyLogo: '公司标志',
+      searchPlaceholder: '搜索产品...',
+      search: '搜索',
+      home: '首页',
+      products: '产品',
+      contact: '联系我们',
+      aboutUs: '关于我们',
+      aboutUsDescription: '我们是一家致力于提供高质量产品的公司。',
+      quickLinks: '快速链接',
+      contactUs: '联系我们',
+      shopUrl: '商店网址',
+      phone: '电话',
+      copyright: '© {year} 诸神黄昏商店。保留所有权利。',
+      productListForCategory: '类别 {id} 中的产品',
+      currency: '¥{amount}',
+      quickView: '快速查看',
+      addToCart: '加入购物车',
+      productCategories: '产品类别'
     }
   },
   ja: {
@@ -377,7 +418,6 @@ const messages = {
           "content": "最先端のAIモデルを活用し、ユーザーのプライバシーと使いやすさを優先しながら、高品質でカスタマイズされたビジュアルコンテンツを提供します。"
         }
       },
-      aboutUsContent: "We are...",
       contactUs: "お問い合わせ",
       contactUsContent: {
         "title": "お問い合わせ",
@@ -388,6 +428,27 @@ const messages = {
         "success": "メッセージが正常に送信されました！",
         "error": "メッセージの送信中にエラーが発生しました。後でもう一度お試しください。"
       }
+    },
+    shop: {
+      companyName: '終末のドワーフ',
+      companyLogo: '',
+      searchPlaceholder: '商品を検索。。。',
+      search: '検索',
+      home: 'ホーム',
+      products: '商品',
+      contact: 'お問い合わせ',
+      aboutUs: '私たちについて',
+      aboutUsDescription: '終末の画像生成へようこそ。個人事業者として、最先端のクリエイティブソリューションを提供することに専念しています。',
+      quickLinks: 'クイックリンク',
+      contactUs: 'お問い合わせ',
+      shopUrl: 'ストアURL',
+      phone: '電話番号',
+      copyright: '© {year} 終末のドワーフ。すべての権利を留保しています。',
+      productListForCategory: 'カテゴリー {id} の商品',
+      currency: '¥{amount}',
+      quickView: 'クイックビュー',
+      addToCart: 'カートに追加',
+      productCategories: '商品カテゴリー'
     }
   }
 }

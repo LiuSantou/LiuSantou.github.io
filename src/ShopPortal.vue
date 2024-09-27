@@ -1,17 +1,10 @@
 <template>
-  <div class="shop-portal">
-    <section class="section header">
-      <MainHeader />
-    </section>
-    <section class="section horizontal-slider">
-      <HorizontalSlider />
-    </section>
-    <section class="section product-categories">
-      <ProductCategories />
-    </section>
-    <section class="section footer">
-      <MainFooter />
-    </section>
+  <div class="shop-portal" :style="{ fontFamily: currentFont + ', Arial, sans-serif' }">
+    <MainHeader :class="{ hidden: isHeaderHidden }" @font-change="updateFont" />
+    <HorizontalSlider />
+    <ProductCategories />
+    <router-view></router-view>
+    <MainFooter />
   </div>
 </template>
 
@@ -28,17 +21,54 @@ export default {
     HorizontalSlider,
     ProductCategories,
     MainFooter
+  },
+  data() {
+    return {
+      lastScrollTop: 0,
+      isHeaderHidden: false,
+      currentFont: 'Zomzi'
+    }
+  },
+  methods: {
+    handleScroll() {
+      const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (currentScrollTop > this.lastScrollTop) {
+        this.isHeaderHidden = true;
+      } else {
+        this.isHeaderHidden = false;
+      }
+      this.lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+    },
+    updateFont(newFont) {
+      this.currentFont = newFont;
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
   }
 }
 </script>
 
 <style>
+@font-face {
+  font-family: 'Zomzi';
+  src: url('@/assets/fonts/Zomzi.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'Jianhao';
+  src: url('@/assets/fonts/Aa剑豪体.ttf') format('truetype');
+}
+
 .shop-portal {
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  display: flex;
-  flex-direction: column;
+  background-image: url('@/assets/images/shop_background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: #333;
 }
 
 .section {
@@ -51,6 +81,11 @@ export default {
   top: 0;
   z-index: 100;
   scroll-snap-align: start;
+  transition: transform 0.3s ease;
+}
+
+.main-header.hidden {
+  transform: translateY(-100%);
 }
 
 .horizontal-slider {

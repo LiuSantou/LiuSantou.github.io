@@ -9,8 +9,13 @@ import AboutUs from '@/generator/views/AboutUs.vue'
 import ContactUs from '@/generator/views/ContactUs.vue'
 
 const routes = [
-  { path: '/shop', component: ShopPortal },
-  { path: '/category/:id', name: 'ProductList', component: ProductList, props: true },
+  { 
+    path: '/shop', 
+    component: ShopPortal,
+    children: [
+      { path: 'category/:id', name: 'ProductList', component: ProductList, props: true },
+    ]
+  },
   {
     path: '/',
     component: Layout,
