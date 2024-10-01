@@ -127,7 +127,23 @@ const messages = {
         "submit": "Submit",
         "success": "Message sent successfully!",
         "error": "An error occurred while sending the message. Please try again later."
-      }
+      },
+      "Cute Fruits": "Cute Fruits",
+      "Studio Ghibli": "Studio Ghibli",
+      "Pixel Art": "Pixel Art",
+      "Toy": "Toy",
+      "Storybook": "Storybook",
+      "Stickers": "Stickers",
+      "Amigurami Crochet": "Amigurami Crochet",
+      "Doodle": "Doodle",
+      "PS1 Style": "PS1 Style",
+      "3D Render": "3D Render",
+      "T-Shirt design": "T-Shirt design",
+      "Color Book": "Color Book",
+      "Cute Cartoon": "Cute Cartoon",
+      "Lineart Anime": "Lineart Anime",
+      "Stylish": "Stylish",
+      "Logo": "Logo"
     },
     shop: {
       companyName: 'Ragnarok Shop',
@@ -277,7 +293,23 @@ const messages = {
         "submit": "提交",
         "success": "信息已成功发送！",
         "error": "信息发送过程中出现错误。请稍后再试。"
-      }
+      },
+      "Cute Fruits": "可爱水果",
+      "Studio Ghibli": "吉卜力工作室",
+      "Pixel Art": "像素艺术",
+      "Toy": "玩具",
+      "Storybook": "故事书",
+      "Stickers": "贴纸",
+      "Amigurami Crochet": "钩针毛绒玩偶",
+      "Doodle": "涂鸦",
+      "PS1 Style": "PS1风格",
+      "3D Render": "3D渲染",
+      "T-Shirt design": "T恤设计",
+      "Color Book": "涂色书",
+      "Cute Cartoon": "可爱卡通",
+      "Lineart Anime": "线条动漫",
+      "Stylish": "时尚",
+      "Logo": "标志"
     },
     shop: {
       companyName: '终末的矮人',
@@ -427,7 +459,23 @@ const messages = {
         "submit": "送信",
         "success": "メッセージが正常に送信されました！",
         "error": "メッセージの送信中にエラーが発生しました。後でもう一度お試しください。"
-      }
+      },
+      "Cute Fruits": "かわいい果物",
+      "Studio Ghibli": "ジブリスタジオ",
+      "Pixel Art": "ピクセルアート",
+      "Toy": "おもちゃ",
+      "Storybook": "絵本",
+      "Stickers": "ステッカー",
+      "Amigurami Crochet": "あみぐるみ",
+      "Doodle": "落書き",
+      "PS1 Style": "PS1スタイル",
+      "3D Render": "3Dレンダリング",
+      "T-Shirt design": "Tシャツデザイン",
+      "Color Book": "塗り絵",
+      "Cute Cartoon": "かわいい漫画",
+      "Lineart Anime": "線画アニメ",
+      "Stylish": "スタイリッシュ",
+      "Logo": "ロゴ"
     },
     shop: {
       companyName: '終末のドワーフ',

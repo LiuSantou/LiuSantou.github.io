@@ -19,21 +19,21 @@
 
     <div class="tab-content">
       <LogoGenerator v-if="currentTab === 0" />
-      <ImageGenerator v-if="currentTab === 1" />
+      <StylishImageGenerator v-if="currentTab === 1" />
     </div>
   </div>
 </template>
 
 <script>
-import ImageGenerator from '@/generator/components/ImageGenerator.vue'
 import LogoGenerator from '@/generator/components/LogoGenerator.vue'
+import StylishImageGenerator from '@/generator/components/StylishImageGenerator.vue';
 
 
 export default {
   name: 'RdGenerator',
   components: {
     LogoGenerator,
-    ImageGenerator
+    StylishImageGenerator
   },
   data() {
     return {
