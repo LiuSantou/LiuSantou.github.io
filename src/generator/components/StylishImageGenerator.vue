@@ -5,8 +5,8 @@
         <option v-for="option in styleOptions" :key="option.key" :value="option.key">{{ $t(`message.${option.name}`) }}</option>
       </select>
       <label for="prompt">{{ $t('message.prompt') }}</label>
-      <textarea v-model="prompt" name="Prompt" :placeholder="$t('message.logoEnterYourPrompt')"></textarea>
-      <button @click="generateLogo" :disabled="isLoading">
+      <textarea v-model="prompt" name="Prompt" :placeholder="$t('message.enterYourPrompt')"></textarea>
+      <button @click="generateImage" :disabled="isLoading">
         {{ isLoading ? $t('message.generating') : $t('message.generate') }}
       </button>
       <!-- Modal -->
@@ -73,7 +73,7 @@
                 const encodedStyle = encodeURIComponent(this.style);
                 const api_url="https://api.ragnarok-dwarf.online:9527"
                 const url = `${api_url}/generate-stylish-image?prompt=${encodedPrompt}&style=${encodedStyle}`;
-                
+
                 const response = await axios.get(url);
                 console.log('API Response:', response);
                 this.taskId = response.data.task_id;
@@ -81,13 +81,13 @@
                 this.isLoading = false;
 
             } catch (error) {
-                console.error('Error generating logo:', error);
+                console.error('Error generating image:', error);
                 this.isLoading = false;
             } finally {
                 this.isLoading = false;
             }
         },
-        async checkLogoStatus() {
+        async checkImageStatus() {
             if (this.isGenerating) return;
             
             this.isGenerating = true;
@@ -107,7 +107,7 @@
                     console.log('Image generation in progress...');
                     setTimeout(() => {
                         this.isGenerating = false;
-                        this.checkLogoStatus();
+                        this.checkImageStatus();
                     }, 5000);
                 } else if (response.data.status === 'no data') {
                     console.log('No data available for the image.');
