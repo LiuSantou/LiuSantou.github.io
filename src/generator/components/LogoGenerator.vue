@@ -102,6 +102,10 @@
                     console.log('No data available for the logo.');
                     this.isGenerating = false;
                     this.showModal = false;
+                } else if (response.data.status === 'time out') {
+                    console.log('Image generation timed out.');
+                    this.isGenerating = false;
+                    this.showModal = false;
                 }
             } catch (error) {
                 console.error('Error fetching logo result:', error);
