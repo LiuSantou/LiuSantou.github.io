@@ -56,7 +56,6 @@
             {"name": "Color Book", "key": "12"},
             {"name": "Cute Cartoon", "key": "13"},
             {"name": "Lineart Anime", "key": "14"},
-            {"name": "Stylish", "key": "15"},
             {"name": "Logo", "key": "16"}
         ],
         isLoading: false,
