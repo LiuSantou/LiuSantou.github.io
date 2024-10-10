@@ -1,14 +1,7 @@
 <template>
   <div class="layout-container" :style="{ fontFamily: currentFont + ', Arial, sans-serif' }">
     <div class="ad-space left-ad" v-if="showAds">
-      <amp-ad width="100vw" height="320"
-        type="adsense"
-        data-ad-client="ca-pub-5751519975977559"
-        data-ad-slot="6834191683"
-        data-auto-format="rspv"
-        data-full-width="">
-      <div overflow=""></div>
-    </amp-ad>
+      <div id="left-ad-container"></div>
     </div>
     <div class="layout">
       <header>
@@ -22,15 +15,8 @@
         <h1 class="page-title" @click="goHome">{{ $t('message.title') }}</h1>
       </header>
       <router-view></router-view>
-      <div class="ad-space bottom-ad" v-if="showAds">
-        <amp-ad width="100vw" height="320"
-          type="adsense"
-          data-ad-client="ca-pub-5751519975977559"
-          data-ad-slot="2694839969"
-          data-auto-format="rspv"
-          data-full-width="">
-        <div overflow=""></div>
-      </amp-ad>
+      <div class="ad-space custom-ad">
+        <div id="custom-ad-container" class="centered-ad-container"></div>
       </div>
       <footer>
         <router-link to="/privacy">{{ $t('message.privacyPolicy') }}</router-link>
@@ -40,14 +26,7 @@
       </footer>
     </div>
     <div class="ad-space right-ad" v-if="showAds">
-      <amp-ad width="100vw" height="320"
-        type="adsense"
-        data-ad-client="ca-pub-5751519975977559"
-        data-ad-slot="2304690242"
-        data-auto-format="rspv"
-        data-full-width="">
-      <div overflow=""></div>
-    </amp-ad>
+      <div id="right-ad-container"></div>
     </div>
   </div>
 </template>
@@ -81,13 +60,55 @@ export default {
   mounted() {
     this.checkAdVisibility();
     window.addEventListener('resize', this.checkAdVisibility);
+    this.loadBottomBannerAd();
+    // this.loadSideAds();
   },
   beforeUnmount() {
     window.removeEventListener('resize', this.checkAdVisibility);
   },
   methods: {
     checkAdVisibility() {
-      this.showAds = window.innerWidth > 1200; // Adjust this value as needed
+      this.showAds = window.innerWidth > 1080; // Adjust this value as needed
+    },
+    loadBottomBannerAd() {
+      const script = document.createElement('script');
+      script.innerHTML = `
+        atOptions = {
+          'key' : '45fa69a9fda96698f3f2ff0391d0bd6f',
+          'format' : 'iframe',
+          'height' : 90,
+          'width' : 728,
+          'params' : {}
+        };
+      `;
+      document.body.appendChild(script);
+
+      const adScript = document.createElement('script');
+      adScript.src = '//www.topcpmcreativeformat.com/45fa69a9fda96698f3f2ff0391d0bd6f/invoke.js';
+      adScript.async = true;
+      document.getElementById('custom-ad-container').appendChild(adScript);
+    },
+    loadSideAds() {
+      const script = document.createElement('script');
+      script.innerHTML = `
+        atOptions = {
+          'key' : '30a3464d9c1799708a453266a55e5059',
+          'format' : 'iframe',
+          'height' : 600,
+          'width' : 160,
+          'params' : {}
+        };
+      `;
+      document.body.appendChild(script);
+
+      const leftAdScript = document.createElement('script');
+      leftAdScript.src = '//www.topcpmcreativeformat.com/30a3464d9c1799708a453266a55e5059/invoke.js';
+      leftAdScript.async = true;
+      document.getElementById('left-ad-container').appendChild(leftAdScript);
+      const rightAdScript = document.createElement('script');
+      rightAdScript.src = '//www.topcpmcreativeformat.com/30a3464d9c1799708a453266a55e5059/invoke.js';
+      rightAdScript.async = true;
+      document.getElementById('right-ad-container').appendChild(rightAdScript);
     }
   }
 }
@@ -208,13 +229,27 @@ footer a {
   margin: 20px 0;
 }
 
+.ad-space.custom-ad {
+  width: 100%;
+  height: 90px;
+  margin: 20px 0;
+}
+
+.centered-ad-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 @media (max-width: 1200px) {
   .ad-space.left-ad,
   .ad-space.right-ad {
     display: none;
   }
   
-  .ad-space.bottom-ad {
+  .ad-space.bottom-ad,
+  .ad-space.custom-ad {
     height: 50px; /* 在较窄的屏幕上减小高度 */
   }
 }

@@ -77,6 +77,7 @@
                 console.log('API Response:', response);
                 this.taskId = response.data.task_id;
                 this.showModal = true;
+                this.loadAd();
                 this.isLoading = false;
 
             } catch (error) {
@@ -121,7 +122,25 @@
                 console.error('Error fetching image result:', error);
                 this.isGenerating = false;
             }
-        }
+        },
+        loadAd() {
+          const script = document.createElement('script');
+          script.innerHTML = `
+            atOptions = {
+              'key' : '47b528a812724e1b5d096059b494de76',
+              'format' : 'iframe',
+              'height' : 250,
+              'width' : 300,
+              'params' : {}
+            };
+          `;
+          document.body.appendChild(script);
+
+          const adScript = document.createElement('script');
+          adScript.src = '//www.topcpmcreativeformat.com/47b528a812724e1b5d096059b494de76/invoke.js';
+          adScript.async = true;
+          document.getElementById('ad-container').appendChild(adScript);
+        },
     }
   }
   </script>

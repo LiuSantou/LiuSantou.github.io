@@ -12,14 +12,8 @@
       <!-- Modal -->
       <div v-if="showModal" class="modal">
         <div class="modal-content">
-            <amp-ad width="100vw" height="320"
-                type="adsense"
-                data-ad-client="ca-pub-5751519975977559"
-                data-ad-slot="8264320289"
-                data-auto-format="rspv"
-                data-full-width="">
-            <div overflow=""></div>
-            </amp-ad>
+            <div class="ad-container">
+            </div>
             <button @click="checkLogoStatus" :disabled="isGenerating">
             {{ isGenerating ? $t('message.generating') : $t('message.showLogo') }}
             </button>
@@ -67,6 +61,7 @@
                 console.log('API Response:', response);
                 this.taskId = response.data.task_id;
                 this.showModal = true;
+                this.loadAd();
                 this.isLoading = false;
 
             } catch (error) {
@@ -111,7 +106,25 @@
                 console.error('Error fetching logo result:', error);
                 this.isGenerating = false;
             }
-        }
+        },
+        loadAd() {
+          const script = document.createElement('script');
+          script.innerHTML = `
+            atOptions = {
+              'key' : '47b528a812724e1b5d096059b494de76',
+              'format' : 'iframe',
+              'height' : 250,
+              'width' : 300,
+              'params' : {}
+            };
+          `;
+          document.body.appendChild(script);
+
+          const adScript = document.createElement('script');
+          adScript.src = '//www.topcpmcreativeformat.com/47b528a812724e1b5d096059b494de76/invoke.js';
+          adScript.async = true;
+          document.getElementById('ad-container').appendChild(adScript);
+        },
     }
   }
   </script>
