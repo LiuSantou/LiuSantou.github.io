@@ -12,17 +12,11 @@
       <!-- Modal -->
       <div v-if="showModal" class="modal">
         <div class="modal-content">
-            <amp-ad width="100vw" height="320"
-                type="adsense"
-                data-ad-client="ca-pub-5751519975977559"
-                data-ad-slot="8264320289"
-                data-auto-format="rspv"
-                data-full-width="">
-            <div overflow=""></div>
-            </amp-ad>
-            <button @click="checkImageStatus" :disabled="isGenerating">
+          <div class="ad-container">
+          </div>
+          <button @click="checkImageStatus" :disabled="isGenerating">
             {{ isGenerating ? $t('message.generating') : $t('message.showImage') }}
-            </button>
+          </button>
         </div>
       </div>
       <div v-if="response" class="response">
