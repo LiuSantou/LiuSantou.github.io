@@ -217,12 +217,6 @@ footer a {
   padding: 5px 0;
 }
 
-@media (max-width: 1200px) {
-  .ad-space {
-    display: none;
-  }
-}
-
 .ad-space.bottom-ad {
   width: 100%;
   height: 90px; /* 标准横幅广告高度，可根据需要调整 */
@@ -240,17 +234,5 @@ footer a {
   justify-content: center;
   align-items: center;
   height: 100%;
-}
-
-@media (max-width: 1200px) {
-  .ad-space.left-ad,
-  .ad-space.right-ad {
-    display: none;
-  }
-  
-  .ad-space.bottom-ad,
-  .ad-space.custom-ad {
-    height: 50px; /* 在较窄的屏幕上减小高度 */
-  }
 }
 </style>
