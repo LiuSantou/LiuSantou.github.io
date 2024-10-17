@@ -62,7 +62,6 @@ export default {
     window.addEventListener('resize', this.checkAdVisibility);
     this.loadBottomBannerAd();
     // this.loadSideAds();
-    this.loadInfolinksScript();
   },
   beforeUnmount() {
     window.removeEventListener('resize', this.checkAdVisibility);
@@ -110,20 +109,6 @@ export default {
       rightAdScript.src = '//www.topcpmcreativeformat.com/30a3464d9c1799708a453266a55e5059/invoke.js';
       rightAdScript.async = true;
       document.getElementById('right-ad-container').appendChild(rightAdScript);
-    },
-    loadInfolinksScript() {
-      const infolinksScript1 = document.createElement('script');
-      infolinksScript1.type = 'text/javascript';
-      infolinksScript1.innerHTML = `
-        var infolinks_pid = 3427378;
-        var infolinks_wsid = 0;
-      `;
-      document.body.appendChild(infolinksScript1);
-
-      const infolinksScript2 = document.createElement('script');
-      infolinksScript2.type = 'text/javascript';
-      infolinksScript2.src = 'http://resources.infolinks.com/js/infolinks_main.js';
-      document.body.appendChild(infolinksScript2);
     }
   }
 }
