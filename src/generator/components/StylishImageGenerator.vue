@@ -36,21 +36,14 @@
         prompt: '',
         response: null,
         styleOptions: [
-            {"name": "Cute Fruits", "key": "1"},
             {"name": "Studio Ghibli", "key": "2"},
             {"name": "Pixel Art", "key": "3"},
-            {"name": "Toy", "key": "4"},
-            {"name": "Storybook", "key": "5"},
             {"name": "Stickers", "key": "6"},
-            {"name": "Amigurami Crochet", "key": "7"},
             {"name": "Doodle", "key": "8"},
             {"name": "PS1 Style", "key": "9"},
             {"name": "3D Render", "key": "10"},
             {"name": "T-Shirt design", "key": "11"},
-            {"name": "Color Book", "key": "12"},
-            {"name": "Cute Cartoon", "key": "13"},
-            {"name": "Lineart Anime", "key": "14"},
-            {"name": "Logo", "key": "16"}
+            {"name": "Lineart Anime", "key": "14"}
         ],
         isLoading: false,
         taskId: null,
