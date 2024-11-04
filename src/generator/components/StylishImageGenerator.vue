@@ -32,7 +32,7 @@
     name: 'ImageGenerator',
     data() {
       return {
-        style: '1',
+        style: '2',
         prompt: '',
         response: null,
         styleOptions: [
